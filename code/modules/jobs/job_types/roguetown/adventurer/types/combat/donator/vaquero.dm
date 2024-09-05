@@ -4,6 +4,7 @@
 	tutorial = "Vaquero are Tieberian swashbucklers who have their origins as skilled horse-tamers of Asturia. It's hard to find horses these days..."
 	allowed_races = list("Tiefling")
 	outfit = /datum/outfit/job/roguetown/adventurer/vaquero
+	traits_applied = list(TRAIT_DODGEEXPERT)
 	horse = /mob/living/simple_animal/hostile/retaliate/rogue/saigabuck/tame/saddled
 	cmode_music = 'sound/music/combat_vaquero.ogg'
 	category_tags = list(CTAG_ADVENTURER)
@@ -52,3 +53,4 @@
 	H.change_stat("intelligence", 2)
 	H.change_stat("endurance", 2)
 	H.change_stat("speed", 2)
+	ADD_TRAIT(H, TRAIT_DODGEEXPERT, TRAIT_GENERIC)
